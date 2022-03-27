@@ -26,7 +26,9 @@ def cat_onehot(df):
 # Automating backward elimination technique
 
 def DoBackwardElimination(the_regressor, X, y, X_val, minP2eliminate):
-    """_summary_
+    """Performos backward elimination using linear regression.
+       Output is a list of features kept after backward elimination and the
+       corresponding input data set with updated list of features.
 
     Args:
         the_regressor (_type_): _description_
